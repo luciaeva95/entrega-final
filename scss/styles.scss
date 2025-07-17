@@ -1,0 +1,13 @@
+// 1. Variables
+@import 'abstracts/variables';
+
+// 2. Componentes
+@import 'components/navbar';
+@import "components/buttons";
+@import 'components/footer';
+
+// 3. Layout
+@import 'layout/body';
+@import 'layout/gallery';
+@import 'layout/sobre-nosotros';
+@import "layout/testimonios"

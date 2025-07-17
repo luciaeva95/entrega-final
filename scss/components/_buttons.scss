@@ -1,0 +1,17 @@
+.btn-primary {
+  background-color: $color-yellow-primary;
+  border-color: $color-yellow-primary;
+  color: $color-black;
+
+  &:hover {
+    background-color: $color-yellow-hover;
+    border-color: $color-yellow-hover;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $color-yellow-active;
+    border-color: $color-yellow-active;
+    box-shadow: 0 0 0 0.25rem $color-yellow-shadow;
+  }
+}

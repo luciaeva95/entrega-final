@@ -1,0 +1,10 @@
+.navbar-brand {
+  img {
+    max-height: 150px;
+    width: auto;
+  }
+}
+
+.navbar.bg-dark {
+  background-color: $color-black !important;
+}
