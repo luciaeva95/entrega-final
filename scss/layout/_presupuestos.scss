@@ -1,0 +1,62 @@
+.formulario {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+
+  &__grupo {
+    flex: 1 1 25%;
+    min-width: 250px;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      width: 100%;
+    }
+  }
+
+  &__comentarios {
+    flex: 1 1 50%;
+    min-width: 250px;
+
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    textarea {
+      width: 100%;
+    }
+  }
+
+  &__boton {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
+// Responsive: Tablet y Mobile
+@media (max-width: 768px) {
+  .formulario {
+    flex-direction: column;
+    align-items: center;
+
+    &__grupo {
+      width: 90%;
+    }
+
+    &__comentarios {
+      width: 100%;
+    }
+
+    &__boton {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}
