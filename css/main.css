@@ -126,16 +126,40 @@ main.container img.img-fluid {
   }
 }
 
-label {
-  text-align: left;
-  display: block;
-  margin-left: 10px;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-span {
-  justify-content: center;
+figure {
+  display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
   text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 1rem;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.2s;
+}
+figure img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+figure figcaption {
+  margin-top: 0.5rem;
 }
 
 #testimonios {

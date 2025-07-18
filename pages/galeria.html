@@ -1,8 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- SEO -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Galeria de imagenes de el servicio de catering familiar en Caballito, Buenos Aires. Platos caseros y personalizados para todo tipo de eventos."
+  />
 
   <!--Bootstrap-->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
@@ -18,10 +23,11 @@
   <link rel="stylesheet" href="../css/main.css" />
   <title>Catering - Galería</title>
 </head>
-<meta name="description" content="Galeria de imagenes de el servicio de catering familiar en Caballito, Buenos Aires. Platos caseros y personalizados para todo tipo de eventos.">
+
 <body>
+  <!-- HEADER -->
   <header>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg" role="navigation" aria-label="Menú principal">
       <div class="container">
         <a class="navbar-brand" href="../index.html">
           <img src="../img/logo.jpeg" alt="Logo de Catering" />
@@ -64,7 +70,7 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="galeria.html">Galería</a>
+              <a class="nav-link" href="galeria.html" aria-current="page">Galería</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="presupuestos.html">Presupuestos</a>
@@ -77,14 +83,14 @@
             </li>
           </ul>
 
-          <form action="" class="d-flex">
+          <form action="" class="d-flex" role="search" aria-label="Formulario de búsqueda">
             <input
               type="search"
               class="form-control me-2"
               aria-label="Buscar"
               placeholder="Buscar"
             />
-            <button class="btn btn-primary">Buscar</button>
+            <button class="btn btn-primary" type="submit">Buscar</button>
           </form>
         </div>
       </div>
@@ -92,45 +98,45 @@
   </header>
 
   <!-- BODY -->
- <section id="galeria">
-  <div class="text-center pt-5">
-    <h1>Galería</h1>
-    <p>Conoce un poco de nuestro trabajo</p>
-  </div>
+  <main>
+    <section id="galeria" aria-labelledby="galeria-title" class="container py-5">
+      <header class="text-center mb-4">
+        <h1 id="galeria-title">Galería</h1>
+        <p>Conoce un poco de nuestro trabajo</p>
+      </header>
 
-  <div class="gallery-grid">
-    <div class="item v2">
-      <img src="../img/catering-vertical-1.jpg" alt="Plato principal de salmón grillado con vegetales asados." />
-    </div>
-    <div class="item h2">
-      <img src="../img/catering-horizontal-1.jpg" alt="Variedad de postres y dulces artesanales en una mesa de catering." />
-    </div>
-    <div class="item c1">
-      <img src="../img/catering-cuadrado-1.jpg" alt="Empanadas caseras de carne y pollo, listas para servir en evento." />
-    </div>
-    <div class="item h2">
-      <img src="../img/catering-horizontal-2.jpg" alt="Bocadillos gourmet variados en bandeja para recepción de cóctel." />
-    </div>
-    <div class="item v2">
-      <img src="../img/catering-vertical-2.jpg" alt="Mesa de brunch con tostadas, frutas frescas, huevos revueltos y café." />
-    </div>
-    <div class="item c1">
-      <img src="../img/catering-cuadrado-2.jpg" alt="Plato principal de salmón grillado con vegetales asados." />
-    </div>
-    <div class="item h2">
-      <img src="../img/catering-horizontal-3.jpg" alt="Empanadas caseras de carne y pollo, listas para servir en evento." />
-    </div>
- 
-  </div>
-</section>
-
+      <div class="gallery-grid" role="list">
+        <article class="item v2" role="listitem">
+          <img src="../img/catering-vertical-1.jpg" alt="Plato principal de salmón grillado con vegetales asados." />
+        </article>
+        <article class="item h2" role="listitem">
+          <img src="../img/catering-horizontal-1.jpg" alt="Variedad de postres y dulces artesanales en una mesa de catering." />
+        </article>
+        <article class="item c1" role="listitem">
+          <img src="../img/catering-cuadrado-1.jpg" alt="Empanadas caseras de carne y pollo, listas para servir en evento." />
+        </article>
+        <article class="item h2" role="listitem">
+          <img src="../img/catering-horizontal-2.jpg" alt="Bocadillos gourmet variados en bandeja para recepción de cóctel." />
+        </article>
+        <article class="item v2" role="listitem">
+          <img src="../img/catering-vertical-2.jpg" alt="Mesa de brunch con tostadas, frutas frescas, huevos revueltos y café." />
+        </article>
+        <article class="item c1" role="listitem">
+          <img src="../img/catering-cuadrado-2.jpg" alt="Plato principal de salmón grillado con vegetales asados." />
+        </article>
+        <article class="item h2" role="listitem">
+          <img src="../img/catering-horizontal-3.jpg" alt="Empanadas caseras de carne y pollo, listas para servir en evento." />
+        </article>
+      </div>
+    </section>
+  </main>
 
   <!-- FOOTER -->
   <footer class="bg-dark text-white pt-5 pb-4">
     <div class="container text-center text-md-left">
       <div class="row text-center text-md-left">
-        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-          <h5 class="text-uppercase mb-4 font-weight-bold text-warning">
+        <section class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3" aria-labelledby="footer-puro-gusto">
+          <h5 id="footer-puro-gusto" class="text-uppercase mb-4 font-weight-bold text-warning">
             Puro Gusto
           </h5>
           <p>
@@ -138,16 +144,18 @@
             Cocinamos con la dedicación y el cariño de casa, para que cada
             evento sea una experiencia memorable.
           </p>
-        </div>
+        </section>
 
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <nav class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3" aria-label="Links de navegación">
           <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Links</h5>
-          <p><a href="#" class="links">Política de Privacidad</a></p>
-          <p><a href="#" class="links">Términos y Condiciones</a></p>
-          <p><a href="#" class="links">Tiempos y Devoluciones</a></p>
-        </div>
+          <ul class="list-unstyled">
+            <li><a href="#" class="links">Política de Privacidad</a></li>
+            <li><a href="#" class="links">Términos y Condiciones</a></li>
+            <li><a href="#" class="links">Tiempos y Devoluciones</a></li>
+          </ul>
+        </nav>
 
-        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <address class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3 text-white">
           <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacto</h5>
           <p>
             <i class="fas fa-home mr-3"></i><br />
@@ -155,12 +163,10 @@
           </p>
           <p>
             <i class="fa-solid fa-phone mr-3"></i><br />
-            <a href="https://web.whatsapp.com/" style="text-decoration: none;">1124781213</a>
+            <a href="https://web.whatsapp.com/" style="text-decoration: none;" class="text-white">1124781213</a>
           </p>
-          <p>
-            <i class="fa-solid fa-envelope mr-3"></i> purogustocatering@gmail.com
-          </p>
-        </div>
+          <p><i class="fa-solid fa-envelope mr-3"></i> Purogustocatering@gmail.com</p>
+        </address>
       </div>
     </div>
   </footer>
@@ -173,3 +179,4 @@
   ></script>
 </body>
 </html>
+
